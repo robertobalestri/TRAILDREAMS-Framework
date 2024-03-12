@@ -23,8 +23,12 @@ TRAILDREAMS is designed to create captivating previews that entice viewers to wa
 
 ## Usage
 
-Generate a trailer with TRAILDREAMS by executing the `main.py` script. Ensure your movie file is in the correct directory and format before starting. The output trailer will be saved inside ```projects\interstellar\trailers\final\interstellar_trailer_1_with_voices_with_soundtrack.mp4```.
 
+Inside the `main.py` script, there's a line that specifies the movie to be processed. For testing purposes, the script is currently set to process only the "Interstellar" movie, as defined by the `interstellar_configs.yaml` file in the `movies` directory.
+Execute the `main.py` script and the output trailer will be saved inside ```projects\interstellar\trailers\final\interstellar_trailer_1_with_voices_with_soundtrack.mp4```.
+
+
+## Usage
 ## Contributing
 
 Contributions to TRAILDREAMS are encouraged. If you have suggestions for improvements or wish to contribute code, please adhere to the standard GitHub pull request process.
