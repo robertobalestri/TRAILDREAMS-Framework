@@ -1,0 +1,15 @@
+movie_path: 'movies/interstellar.mp4'
+movie_id: '0816692'  #IMDB code
+project_name: interstellar
+
+target_standard_clip_count: 15
+target_quote_clip_count: 6
+
+min_clip_len: 3
+max_clip_len: 6
+
+voice_over_volume: 1 #In percentage between 0 and 1
+standard_clips_volume_in_dB: -30 #0dB means full volume, -100dB means no volume
+
+music_volume_in_dB: 0  #0dB means full volume, -100dB means no volume
+trailer_no_soundtrack_volume_in_dB: 0 #0dB means full volume, -100dB means no volume
