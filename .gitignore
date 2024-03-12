@@ -1,0 +1,8 @@
+movies/
+scaled/
+projects/
+venv_ai_trailer/
+temp/
+temporary_audio_separation/
+.env
+src/pycache/
