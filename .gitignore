@@ -5,6 +5,8 @@ venv_ai_trailer/
 temp/
 temporary_audio_separation/
 .env
-src/pycache/
+src/__pycache__/
+__pycache__
+
 
 !movies/interstellar_configs.yaml
