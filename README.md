@@ -12,7 +12,7 @@ TRAILDREAMS is designed to create captivating previews that entice viewers to wa
 2. Install the required Python packages using the provided `requirements.txt` file.
 3. Install FFmpeg on your system if it's not already installed. This can typically be done through your system's package manager or by downloading it from the FFmpeg official website.
 
-For PyTorch installation, visit the PyTorch website to select the installation command that matches your system setup, especially the version that aligns with your CUDA for GPU support if applicable.
+For PyTorch installation, visit the PyTorch website ```https://pytorch.org/get-started/locally/```.
 
 After setting up the environment, download and install the SpaCy English model by executing the SpaCy model download command.
 
