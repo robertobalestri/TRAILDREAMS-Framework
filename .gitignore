@@ -6,3 +6,5 @@ temp/
 temporary_audio_separation/
 .env
 src/pycache/
+
+!movies/interstellar_configs.yaml
