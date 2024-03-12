@@ -23,30 +23,30 @@ def process_movie(configs_path):
     
     movie_info = MovieInfo(configs['movie_id'], configs['movie_path']).fill_with_imdb_info()
     
-    #frame.frame_main(movie_info)
+    frame.frame_main(movie_info)
     
     target_clip_count = configs["target_standard_clip_count"]
-    #plot.plot_main(movie_info, target_clip_count = target_clip_count)
+    plot.plot_main(movie_info, target_clip_count = target_clip_count)
     
     target_quote_clip_count = configs["target_quote_clip_count"]
-    #quotes.quotes_main(movie_info, target_quote_clip_count)
+    quotes.quotes_main(movie_info, target_quote_clip_count)
     
     
     similarity_model_id = SIMILARITY_MODEL_ID
     similarity_batch_size = SIMILARITY_BATCH_SIZE
     n_retrieved_images = NUMBER_RETRIEVED_IMAGES
-    #image_retrieval.image_retrieval_main(movie_info, similarity_model_id, similarity_batch_size, n_retrieved_images)
+    image_retrieval.image_retrieval_main(movie_info, similarity_model_id, similarity_batch_size, n_retrieved_images)
     
     
     how_many_seconds_buffer = HOW_MANY_SECONDS_BUFFER
     max_seconds_before_chosen_frame = MAX_SECONDS_BEFORE_CHOSEN_FRAME
     max_clip_len = configs["max_clip_len"]
     min_clip_len = configs["min_clip_len"]
-    #clip.clip_main(movie_info, how_many_seconds_buffer, max_seconds_before_chosen_frame, max_clip_len, min_clip_len)
+    clip.clip_main(movie_info, how_many_seconds_buffer, max_seconds_before_chosen_frame, max_clip_len, min_clip_len)
     
-    #join_clip.join_clip_main(movie_info)
+    join_clip.join_clip_main(movie_info)
     
-    #gpt_trailer_speech.gpt_trailer_speech_main(movie_info)
+    gpt_trailer_speech.gpt_trailer_speech_main(movie_info)
 
     tts_model = TTS_MODEL
     voice_padding = VOICE_PADDING
@@ -57,7 +57,7 @@ def process_movie(configs_path):
     voice_volume = configs["voice_over_volume"]
     attach_voices_to_trailer.attach_voices_to_trailer_main(movie_info, clips_volume, voice_volume)
 
-    #music_generation.music_generation_main(movie_info)
+    music_generation.music_generation_main(movie_info)
     
     music_volume_in_dB = configs["music_volume_in_dB"]
     trailer_no_soundtrack_volume_in_dB = configs["trailer_no_soundtrack_volume_in_dB"]
@@ -73,22 +73,7 @@ def main():
         print(str(configs_file))
         
         #FOR TESTING PURPOSES, ONLY ONE MOVIE IS PROCESSED
-        if(str(configs_file) != r"movies\night_of_the_living_dead_configs.yaml" 
-           and str(configs_file) != r"movies\300_configs.yaml" 
-           and str(configs_file) != r"movies\1917_configs.yaml"
-           and str(configs_file) != r"movies\grand_budapest_hotel_configs.yaml"
-           and str(configs_file) != r"movies\fight_club_configs.yaml"
-           and str(configs_file) != r"movies\mission_impossible_configs.yaml"
-           and str(configs_file) != r"movies\interstellar_configs.yaml"
-           and str(configs_file) != r"movies\the_lord_of_the_rings_the_return_of_the_king_configs.yaml"
-           and str(configs_file) != r"movies\the_hobbit_an_unexpected_journey_configs.yaml"
-           and str(configs_file) != r"movies\the_killing_configs.yaml" 
-           and str(configs_file) != r"movies\dracula_configs.yaml" 
-           and str(configs_file) != r"movies\the_wolverine_configs.yaml" 
-           #and str(configs_file) != r"movies\the_hobbit_the_desolation_of_smaug_configs.yaml" 
-           and str(configs_file) != r"movies\300_rise_of_an_empire_configs.yaml"
-           
-        ):
+        if(str(configs_file) == r"movies\interstellar_configs.yaml"):
             process_movie(str(configs_file))
 
 if __name__ == "__main__":
