@@ -11,7 +11,7 @@ TRAILDREAMS is designed to create captivating previews that entice viewers to wa
 1. Clone the TRAILDREAMS repository to your local machine and navigate to the TRAILDREAMS directory.
 2. Install the required Python packages using the provided `requirements.txt` file.
 3. Install FFmpeg on your system if it's not already installed. This can typically be done through your system's package manager or by downloading it from the FFmpeg official website.
-4. For PyTorch installation, visit the PyTorch website ```https://pytorch.org/get-started/locally/```. For our testing we used CUDA 12.1 and we ran ```pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121``` 
+4. For PyTorch installation, visit the PyTorch website ```https://pytorch.org/get-started/locally/```. For our testing we used CUDA 12.1 and we ran ```pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121``` to install a PyTorch version that works with our requirements.
 5. Download and install the SpaCy English model by executing the SpaCy model download command.
 ```python -m spacy download en_core_web_sm```
 6. Add a .env file to the root folder with two variables: AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_KEY. NOTE: You'll need an Azure OpenAI API key.
