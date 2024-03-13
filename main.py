@@ -68,8 +68,6 @@ def main():
     logger.info("Starting the main function")
     
     configs_directory = MOVIES_DIR  # Directory containing all your YAML configuration files
-   
-    print(str(configs_directory))
     
     print(len(list(Path(configs_directory).glob("*"))))
     
