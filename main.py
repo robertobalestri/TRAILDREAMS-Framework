@@ -77,7 +77,6 @@ def main():
         
         #FOR TESTING PURPOSES, ONLY ONE MOVIE IS PROCESSED
         if(str(configs_file) == r"movies\interstellar_configs.yaml"):
-            print("Processing the killing")
             process_movie(str(configs_file))
 
 if __name__ == "__main__":
