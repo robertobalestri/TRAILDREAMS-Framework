@@ -129,6 +129,10 @@ def plot_main(movie_info: MovieInfo, target_clip_count: int) -> None:
     if synopsis:
         if not plot_path.exists():
             subplots = []
+            print("target_clip_count) = " + str(target_clip_count))
+            print("len(subplots) = " + str(len(subplots)))
+            print("target_clip_count - 1) = " + str(target_clip_count - 1))
+            
             while len(subplots) != target_clip_count and len(subplots) != target_clip_count - 1 and len(subplots) != target_clip_count + 1:
             # Call the function to delete the scene folders
                 delete_scene_folders(project_dir)

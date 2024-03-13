@@ -14,7 +14,7 @@ TRAILDREAMS is designed to create captivating previews that entice viewers to wa
 4. For PyTorch installation, visit the PyTorch website ```https://pytorch.org/get-started/locally/```.
 5. Download and install the SpaCy English model by executing the SpaCy model download command.
 ```python -m spacy download en_core_web_sm```
-6. Add info inside the .env file. You'll need an Azure OpenAI API key.
+6. Add a .env file to the root folder with two variables: AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_KEY. NOTE: You'll need an Azure OpenAI API key.
 
 ## Preparing the Movie File
 
