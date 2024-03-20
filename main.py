@@ -23,7 +23,7 @@ def process_movie(configs_path):
     
     movie_info = MovieInfo(configs['movie_id'], configs['movie_path']).fill_with_imdb_info()
     
-    #frame.frame_main(movie_info)
+    frame.frame_main(movie_info)
     
     target_clip_count = configs["target_standard_clip_count"]
     plot.plot_main(movie_info, target_clip_count = target_clip_count)
@@ -76,7 +76,7 @@ def main():
         print(str(configs_file))
         
         #FOR TESTING PURPOSES, ONLY ONE MOVIE IS PROCESSED
-        if(str(configs_file) == r"movies\interstellar_configs.yaml"):
+        if(str(configs_file) == r"movies\pulp_fiction_configs.yaml"):
             process_movie(str(configs_file))
 
 if __name__ == "__main__":
