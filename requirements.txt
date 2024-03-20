@@ -13,4 +13,8 @@ requests==2.31.0
 spacy==3.7.2
 textblob==0.18.0.post0
 scenedetect==0.6.2
+openai
+transformers
+TTS
+pyannote.audio
 git+https://github.com/facebookresearch/audiocraft.git@69fea8b290ad1b4b40d28f92d1dfc0ab01dbab85

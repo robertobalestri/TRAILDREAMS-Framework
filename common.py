@@ -111,7 +111,7 @@ violent_words = [
     "beating", "vandalism", "disfigure", "threat", "demolition", "combat", "sabotage", "crash", "fistfight", "detonates", "explosives",
     'fighting', 'wound', 'destruction', 'destroyed', "gun", "shot", "fight", "blood", "assaulted", "beat", "pistol", "fighting", 
     "shooting", "bomb", "explosives", "detonates", "detonation", 'assassin', 'assassins', 'amputated', 'bodies', 'victims', 'monsters',
-    'ripped', 'grabbed', 'cadaver', 'limbs', 
+    'ripped', 'grabbed', 'cadaver', 'limbs', 'fuckin\'', 'fucking', 'motherfucker', 'negro', 'nigga', 'niggers', 'nigger', 
 ]
 
 def filter_violent_words(text, substitute_with_redacted=True):
