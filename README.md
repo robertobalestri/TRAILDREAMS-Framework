@@ -44,10 +44,6 @@ This project is licensed under the MIT License. Refer to the LICENSE.md file for
 
 If you use TRAILDREAMS in your research, please cite our paper.
 
-## Acknowledgments
-
-- Extend gratitude to any collaborators, funding sources, or other forms of support.
-
 ## Contact
 
 For questions or additional support, please contact roberto.balestri2@unibo.it
