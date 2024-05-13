@@ -11,12 +11,13 @@ TRAILDREAMS is designed to create captivating previews that entice viewers to wa
 1. Clone the TRAILDREAMS repository to your local machine and navigate to the TRAILDREAMS directory.
 2. Install Microsoft C++ Build Tools at ```https://visualstudio.microsoft.com/it/visual-cpp-build-tools/```
 3. Create a virtual environment. Install the required Python packages using the provided `requirements.txt` file.
-4. Install FFmpeg on your system if it's not already installed. This can typically be done through your system's package manager or by downloading it from the FFmpeg official website.
+4. Due to some package incompatibilies, you should install TTS with ```pip install TTS``` and then you should uninstall PyTorch and all its packages with ```pip uninstall torch``` (confirm with "y" when requested by the terminal).
 5. For PyTorch installation, visit the PyTorch website ```https://pytorch.org/get-started/locally/```. For our testing we used CUDA 12.1 and we ran ```pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121``` to install a PyTorch version that works with our requirements.
-6. Download and install the SpaCy English model by executing the SpaCy model download command.
+6. Install FFmpeg on your system if it's not already installed. This can typically be done through your system's package manager or by downloading it from the FFmpeg official website.
+7. Download and install the SpaCy English model by executing the SpaCy model download command.
 ```python -m spacy download en_core_web_sm```
-7. Add a .env file to the root folder with two variables: AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_KEY. NOTE: You'll need an Azure OpenAI API key.
-8. Type ```huggingface-cli login``` in the terminal (virtual environment should be activated). Generate a token from your HuggingFace account and paste it when requested.
+8. Add a .env file to the root folder with two variables: AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_KEY. NOTE: You'll need an Azure OpenAI API key.
+9. Type ```huggingface-cli login``` in the terminal (virtual environment should be activated). Generate a token from your HuggingFace account and paste it when requested.
 
 ## Preparing the Movie File
 
@@ -42,10 +43,6 @@ This project is licensed under the MIT License. Refer to the LICENSE.md file for
 ## Citation
 
 If you use TRAILDREAMS in your research, please cite our paper.
-
-## Acknowledgments
-
-- Extend gratitude to any collaborators, funding sources, or other forms of support.
 
 ## Contact
 
