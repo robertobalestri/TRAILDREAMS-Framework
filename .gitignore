@@ -7,6 +7,9 @@ temporary_audio_separation/
 .env
 src/__pycache__/
 __pycache__
-
+script_data_analysis_survey.py
 
 !movies/interstellar_configs.yaml
+
+TRAILDREAMS NEW SHEET.xlsx
+survey_results.xlsx BA
